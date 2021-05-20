@@ -16,7 +16,7 @@ pipeline {
 
   post{
     always{
-      build job: 'aws_test'
+      build job: 'pipeline_test2'
     }
   }
 }
