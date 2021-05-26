@@ -14,9 +14,4 @@ pipeline {
     }
   }
 
-  post{
-    always{
-      build job: 'pipeline_test2'
-    }
-  }
 }
