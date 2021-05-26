@@ -12,6 +12,13 @@ pipeline {
         sh 'java Testing'
       }  
     }
+
+    stage("Docker"){
+      steps {
+        sh 'docker build -t first-java-docker .'
+        sh 'docker run first-java-docker'
+      }
+    }
   }
 
 }
